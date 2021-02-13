@@ -304,6 +304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
+  - component: {fileID: 963194229}
   - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
@@ -377,6 +378,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 46.513, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 715409e108739654eb8dadce77dde1c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToFollow: {fileID: 1328822189}
+  offset: {x: 0, y: 5, z: -10}
+  lookSpeed: 100
+  followSpeed: 100
 --- !u!850595691 &1114763845
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -703,8 +720,13 @@ MonoBehaviour:
     rightWheelT: {fileID: 830054529}
     motor: 0
     steering: 0
-  maxMotorTorque: 500
+  maxMotorTorque: 1500
   maxSteeringAngle: 30
+--- !u!4 &1328822189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4996138570027138, guid: 18c5fed9cca812a458ccf567688e3a1f, type: 3}
+  m_PrefabInstance: {fileID: 1154237567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1328822191
 Rigidbody:
   m_ObjectHideFlags: 0
